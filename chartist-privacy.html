@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Chartist</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.65;
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 4rem;
+    color: #14201a;
+    background: #f7faf8;
+  }
+  h1 { font-size: 2rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.3rem; margin-top: 2.25rem; }
+  .updated { color: #5a5a5a; margin-top: 0; }
+  .lead {
+    background: #e4f7ea;
+    border-left: 5px solid #1a7a42;
+    padding: 1rem 1.25rem;
+    border-radius: 6px;
+  }
+  ul { padding-left: 1.25rem; }
+  a { color: #1a7a42; }
+  code {
+    background: rgba(0,0,0,.06);
+    padding: .1rem .35rem;
+    border-radius: 4px;
+    font-size: .92em;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #dff0e5; background: #08110c; }
+    .updated { color: #9fb3a8; }
+    .lead { background: #0e2417; border-left-color: #3bf77a; }
+    a { color: #3bf77a; }
+    code { background: rgba(255,255,255,.09); }
+  }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy — Chartist</h1>
+<p class="updated">Last updated: 2 September 2026</p>
+
+<p>Chartist is made by ASGILAB.</p>
+
+<div class="lead">
+  <p><strong>The short version.</strong> Chartist does not collect your name,
+  your email, or any personal information. There is no account and no login.
+  A photo you take of a chart is read on your phone first and, in most cases,
+  never leaves it. What does leave your phone is a ticker symbol, so the app
+  can fetch that instrument's real price history — the same as typing "AAPL"
+  into any finance app.</p>
+</div>
+
+<h2>What the app is for</h2>
+<p>Chartist reads a chart — a photo, a screenshot, or a ticker you type — and
+computes support and resistance levels, patterns and momentum from the real
+price history of that instrument. It is a technical-analysis tool, not a
+brokerage: it never sees or touches any account you hold anywhere, and it
+never asks you to sign in to one.</p>
+
+<h2>Photos and screenshots</h2>
+<p>When you scan a chart, the app first tries to read the ticker and timeframe
+printed on it using on-device text recognition, entirely on your phone. In
+most cases that is enough, and the photo is never sent anywhere.</p>
+<p>If that reading is not confident enough, the photo is sent once to our
+server and on to <strong>Anthropic</strong>, whose model is asked to do exactly
+one thing: read the label off the chart — the ticker and the timeframe, nothing
+about price or what to do about it. That label is used to fetch the
+instrument's real data; the photo itself is not stored on our server or by
+Anthropic, and nothing about the image is kept after that single request
+completes.</p>
+<p>If even that cannot read a label, the app asks you to type or confirm the
+ticker instead — it never guesses.</p>
+
+<h2>Camera and Photo Library permissions</h2>
+<p><strong>Camera.</strong> Used only to photograph a chart you point it at,
+for the reason above. <strong>Photo Library.</strong> Used only when you choose
+an existing screenshot to scan. Neither is used for anything else, and the app
+does not browse your library — you choose one image at a time.</p>
+
+<h2>What is fetched from the internet</h2>
+<p>Once an instrument is identified — by scan, by search, by pasting a chart
+link, or by typing a ticker — the app fetches that instrument's public price
+history through our own server, which is not personal information: it is the
+same OHLC data a stock ticker on television shows. Every level, pattern and
+number you see is then computed on your phone from that data. A short prose
+summary of those already-computed numbers is written by an Anthropic model,
+which never sees your photo, your device, or anything about you — only the
+numbers our engine already produced.</p>
+
+<h2>Search</h2>
+<p>Typing a company name or partial ticker sends that text to our server, which
+asks a market-data provider for matching instruments. Nothing beyond the text
+you typed is sent, and it is not linked to you in any way.</p>
+
+<h2>Purchases</h2>
+<p>If you subscribe, the purchase is handled by <strong>Apple</strong> and by
+<strong>RevenueCat</strong>, who manage subscriptions on our behalf.</p>
+<p>RevenueCat receives an anonymous identifier and details of the purchase
+itself so the app can tell that you have paid. It does not receive your name,
+your photos, or anything you have scanned or searched.</p>
+<ul>
+  <li><a href="https://www.revenuecat.com/privacy">RevenueCat's privacy policy</a></li>
+  <li><a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a></li>
+</ul>
+<p>We never see, and never store, your payment details.</p>
+
+<h2>Analytics and tracking</h2>
+<p>There are none. The app contains no analytics, no advertising and no
+tracking of any kind. We do not know which charts you have scanned, which
+tickers you have looked at, or how often you open the app.</p>
+
+<h2>What we do keep, briefly</h2>
+<p>Price history for popular instruments is cached on our server for a short
+time — minutes to an hour, depending on the timeframe — purely so the app does
+not have to re-fetch the same public data on every request. This cache holds
+market data, never anything about you or your device.</p>
+
+<h2>Not investment advice</h2>
+<p>Chartist describes what a chart has already done — structure, levels, and
+the momentum behind a move. It never recommends what to buy, sell, or hold, at
+what price, or when. Technical analysis is educational; markets carry risk of
+loss.</p>
+
+<h2>Children</h2>
+<p>Chartist is not directed at children and requires no personal information
+from anyone.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the date at the top will change with it.</p>
+
+<h2>Contact</h2>
+<p>Questions about privacy: <a href="mailto:thisisme035@gmail.com">thisisme035@gmail.com</a></p>
+
+</body>
+</html>
