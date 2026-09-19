@@ -44,101 +44,107 @@
 <body>
 
 <h1>Privacy Policy — ChartPro</h1>
-<p class="updated">Last updated: 2 September 2026</p>
+<p class="updated">Last updated: 19 September 2026</p>
 
-<p>ChartPro is made by ASGILAB.</p>
+<p>ChartPro is made by ASGILAB. This page explains what we collect, why, who
+handles it, and how to have it removed.</p>
 
 <div class="lead">
-  <p><strong>The short version.</strong> ChartPro does not collect your name,
-  your email, or any personal information. There is no account and no login.
-  A photo you take of a chart is read on your phone first and, in most cases,
-  never leaves it. What does leave your phone is a ticker symbol, so the app
-  can fetch that instrument's real price history — the same as typing "AAPL"
-  into any finance app.</p>
+  <p><strong>The short version.</strong> There are no passwords and no
+  profile. To purchase, you give us an email address; that is how we find
+  your purchase again. Your card details never reach us. We do not sell your
+  data, and we do not show ads.</p>
 </div>
 
-<h2>What the app is for</h2>
-<p>ChartPro reads a chart — a photo, a screenshot, or a ticker you type — and
-computes support and resistance levels, patterns and momentum from the real
-price history of that instrument. It is a technical-analysis tool, not a
-brokerage: it never sees or touches any account you hold anywhere, and it
-never asks you to sign in to one.</p>
-
-<h2>Photos and screenshots</h2>
-<p>When you scan a chart, the app first tries to read the ticker and timeframe
-printed on it using on-device text recognition, entirely on your phone. In
-most cases that is enough, and the photo is never sent anywhere.</p>
-<p>If that reading is not confident enough, the photo is sent once to our
-server and on to <strong>Anthropic</strong>, whose model is asked to do exactly
-one thing: read the label off the chart — the ticker and the timeframe, nothing
-about price or what to do about it. That label is used to fetch the
-instrument's real data; the photo itself is not stored on our server or by
-Anthropic, and nothing about the image is kept after that single request
-completes.</p>
-<p>If even that cannot read a label, the app asks you to type or confirm the
-ticker instead — it never guesses.</p>
-
-<h2>Camera and Photo Library permissions</h2>
-<p><strong>Camera.</strong> Used only to photograph a chart you point it at,
-for the reason above. <strong>Photo Library.</strong> Used only when you choose
-an existing screenshot to scan. Neither is used for anything else, and the app
-does not browse your library — you choose one image at a time.</p>
-
-<h2>What is fetched from the internet</h2>
-<p>Once an instrument is identified — by scan, by search, by pasting a chart
-link, or by typing a ticker — the app fetches that instrument's public price
-history through our own server, which is not personal information: it is the
-same OHLC data a stock ticker on television shows. Every level, pattern and
-number you see is then computed on your phone from that data. A short prose
-summary of those already-computed numbers is written by an Anthropic model,
-which never sees your photo, your device, or anything about you — only the
-numbers our engine already produced.</p>
-
-<h2>Search</h2>
-<p>Typing a company name or partial ticker sends that text to our server, which
-asks a market-data provider for matching instruments. Nothing beyond the text
-you typed is sent, and it is not linked to you in any way.</p>
-
-<h2>Purchases</h2>
-<p>If you subscribe, the purchase is handled by <strong>Apple</strong> and by
-<strong>RevenueCat</strong>, who manage subscriptions on our behalf.</p>
-<p>RevenueCat receives an anonymous identifier and details of the purchase
-itself so the app can tell that you have paid. It does not receive your name,
-your photos, or anything you have scanned or searched.</p>
+<h2>What we collect, and why</h2>
 <ul>
-  <li><a href="https://www.revenuecat.com/privacy">RevenueCat's privacy policy</a></li>
-  <li><a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a></li>
+  <li><strong>Your email address.</strong> Entered when you purchase or restore
+  a purchase. We keep it in your browser and on our server, next to your plan
+  and your scan-credit balance, so the app can tell what you have paid for.</li>
+  <li><strong>Payment details.</strong> We never see or store these. Checkout
+  happens on a page hosted by Dodo Payments, who take the payment and send us
+  a confirmation containing your email and what you purchased.</li>
+  <li><strong>Tickers and searches.</strong> When you type a ticker or a company
+  name, that text is sent to our server so it can fetch the price data. It is
+  not linked to your email.</li>
+  <li><strong>Images you upload to scan.</strong> The image is sent to our
+  server and on to Anthropic, whose model is asked for one thing: the ticker
+  and timeframe printed on the chart. We do not store the image. Anthropic
+  handles it under its own terms (see the links below).</li>
+  <li><strong>Usage analytics.</strong> We use PostHog, hosted in the EU, to see
+  which pages and buttons get used. It does not record your screen, and it is
+  not sent your tickers, your images or your email. It stores an
+  anonymous identifier in your browser to tell visits apart.</li>
+  <li><strong>Technical data.</strong> Our host, Cloudflare, processes your IP
+  address and request details to deliver the site and block abuse. We keep a
+  short-lived counter per IP address (about two minutes) to limit request
+  rates.</li>
 </ul>
-<p>We never see, and never store, your payment details.</p>
 
-<h2>Analytics and tracking</h2>
-<p>We use PostHog to see basic product usage — which pages and buttons get
-used, so we know what to improve. It does not know your name or email, and it
-never sees a chart you have scanned or a ticker you have looked at. There is
-no advertising and no ad tracking of any kind.</p>
-<p><a href="https://posthog.com/privacy">PostHog's privacy policy</a></p>
+<h2>What we do not do</h2>
+<ul>
+  <li>We do not sell or rent your data.</li>
+  <li>We do not run advertising or ad tracking.</li>
+  <li>We do not record your sessions or your screen.</li>
+  <li>We never see your card number.</li>
+</ul>
 
-<h2>What we do keep, briefly</h2>
-<p>Price history for popular instruments is cached on our server for a short
-time — minutes to an hour, depending on the timeframe — purely so the app does
-not have to re-fetch the same public data on every request. This cache holds
-market data, never anything about you or your device.</p>
+<h2>Who else handles data</h2>
+<p>These providers process data on our behalf, only to run ChartPro:</p>
+<ul>
+  <li><strong>Cloudflare</strong> — hosting and delivery.</li>
+  <li><strong>Dodo Payments</strong> — payments, tax and receipts, as the
+  merchant of record. <a href="https://dodopayments.com/legal/privacy-policy">Their privacy policy</a>.</li>
+  <li><strong>Anthropic</strong> — reading the label off an uploaded chart image.
+  <a href="https://www.anthropic.com/legal/privacy">Their privacy policy</a>.</li>
+  <li><strong>PostHog</strong> — product analytics.
+  <a href="https://posthog.com/privacy">Their privacy policy</a>.</li>
+  <li><strong>Market-data providers</strong> (currently Yahoo Finance) — we ask
+  them for price history for the ticker you typed. They receive the ticker,
+  not who you are.</li>
+</ul>
+
+<h2>What is stored on your device</h2>
+<p>Your browser keeps your email (so Restore works), your onboarding answers
+and your saved watchlist. These stay on your device. Clearing your browser
+data removes them; your purchase itself is not lost, because it is tied to your
+email on our side.</p>
+
+<h2>How long we keep it</h2>
+<p>We keep your email, plan and credit balance for as long as your purchase is
+in effect and for any period we are required to keep purchase records. Price
+data is cached on our server for minutes to an hour and holds nothing about
+you.</p>
+
+<h2>Your choices</h2>
+<p>You can ask us to show you what we hold about you, correct it, or delete it,
+by emailing the address below. We will act on a verified request within 30
+days. Deleting your email record means we can no longer restore a purchase for
+you, so do this only when you are finished with the service. If you are in the
+EU, UK or India you may also have rights under local data-protection law; those
+rights are covered by the same email.</p>
+
+<h2>Where data goes</h2>
+<p>Our providers operate internationally, so your data may be processed outside
+the country you are in. Analytics is hosted in the EU.</p>
 
 <h2>Not investment advice</h2>
 <p>ChartPro describes what a chart has already done — structure, levels, and
-the momentum behind a move. It never recommends what to buy, sell, or hold, at
-what price, or when. Technical analysis is educational; markets carry risk of
+the momentum behind a move. It does not tell you what to trade, or predict
+where price goes next. Technical analysis is educational; markets carry risk of
 loss.</p>
 
 <h2>Children</h2>
-<p>ChartPro is not directed at children and requires no personal information
-from anyone.</p>
+<p>ChartPro is not directed at children. If you believe a child has given us an
+email address, tell us and we will remove it.</p>
 
 <h2>Changes</h2>
 <p>If this policy changes, the date at the top will change with it.</p>
 
 <h2>Contact</h2>
-<p>Questions about privacy: <a href="mailto:thisisme035@gmail.com">thisisme035@gmail.com</a></p>
+<p>Privacy questions and requests: <a href="mailto:thisisme035@gmail.com">thisisme035@gmail.com</a></p>
+
+<p><a href="chartpro-terms.html">Terms of Use</a> · <a href="chartpro-refunds.html">Refund Policy</a> · <a href="chartist-support.html">Support</a></p>
 
 </body>
 </html>
