@@ -58,9 +58,14 @@ handles it, and how to have it removed.</p>
 
 <h2>What we collect, and why</h2>
 <ul>
-  <li><strong>Your email address.</strong> Entered when you purchase or restore
-  a purchase. We keep it in your browser and on our server, next to your plan
-  and your scan-credit balance, so the app can tell what you have paid for.</li>
+  <li><strong>Your email address.</strong> Entered when you sign in or purchase.
+  We keep it in your browser and on our server, next to your plan and your
+  scan-credit balance, so the app can tell what you have paid for.</li>
+  <li><strong>Sign-in codes and sessions.</strong> To prove an email address is
+  yours, we email it a six-digit code. The code is stored only as a hash and is
+  deleted when used or after 10 minutes. Signing in creates a session that stays
+  on this device for up to 90 days; only a hash of it is kept on our server, and
+  signing out deletes it.</li>
   <li><strong>Payment details.</strong> We never see or store these. Checkout
   happens on a page hosted by Dodo Payments, who take the payment and send us
   a confirmation containing your email and what you purchased.</li>
@@ -93,6 +98,8 @@ handles it, and how to have it removed.</p>
 <p>These providers process data on our behalf, only to run ChartPro:</p>
 <ul>
   <li><strong>Cloudflare</strong> — hosting and delivery.</li>
+  <li><strong>Resend</strong> — sends the sign-in code emails.
+  <a href="https://resend.com/legal/privacy-policy">Their privacy policy</a>.</li>
   <li><strong>Dodo Payments</strong> — payments, tax and receipts, as the
   merchant of record. <a href="https://dodopayments.com/legal/privacy-policy">Their privacy policy</a>.</li>
   <li><strong>Anthropic</strong> — reading the label off an uploaded chart image.
